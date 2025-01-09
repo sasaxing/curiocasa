@@ -1,0 +1,32 @@
+[{
+    "_id": {
+      "$oid": "677f9d5acbd4a6017b2f26ee"
+    },
+    "name": "aegis",
+    "path": "/images/aegis.png",
+    "description": "这是雅典娜的盾牌"
+  },
+  {
+    "_id": {
+      "$oid": "677fde946028d1264ca66697"
+    },
+    "name": "seaside",
+    "path": "/images/seaside.png",
+    "description": "大卫·弗里德里希的画作——海边的妇人"
+  },
+  {
+    "_id": {
+      "$oid": "677fdecf6028d1264ca66698"
+    },
+    "name": "riverside",
+    "path": "/images/riverside.png",
+    "description": "大卫·弗里德里希的画作——河边的房屋"
+  },
+  {
+    "_id": {
+      "$oid": "677fdeef6028d1264ca66699"
+    },
+    "name": "dresden",
+    "path": "/images/dresden.png",
+    "description": "大卫·弗里德里希的画作——德累斯顿"
+  }]

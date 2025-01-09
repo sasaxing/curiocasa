@@ -1,0 +1,155 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.thumbnail {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  transition: 0.3s;
+}
+
+.thumbnail:hover {
+  border-color: #666;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.modal img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.image-container {
+  width: 700px;  /* 容器的固定宽度 */
+  height: 500px; /* 容器的固定高度 */
+  overflow: hidden;  /* 防止图片溢出 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-container img {
+  width: 100%;  /* 使图片的宽度填满容器 */
+  height: 100%; /* 使图片的高度填满容器 */
+  object-fit: contain;  /* 保持图片比例，适应容器 */
+}
+
+.image-preview-container {
+  width: 200px;  /* 容器的固定宽度 */
+  height: 100px; /* 容器的固定高度 */
+  overflow: hidden;  /* 防止图片溢出 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-preview-container img {
+  width: 100%;  /* 使图片的宽度填满容器 */
+  height: 100%; /* 使图片的高度填满容器 */
+  object-fit: contain;  /* 保持图片比例，适应容器 */
+}
+
+
+/* sidebar */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.sidebar li:hover {
+  background-color: #ddd;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
