@@ -52,12 +52,12 @@ const ImageGallery = () => {
   const [images, setImages] = useState([] as ImageInfo[]);
   const [selectedItem, setSelectedItem] = useState({} as ImageInfo);
 
-
   const fetchImages = async () => {
     try {
+      const BACKEND_URL = "http://192.168.2.72:5000"
       console.log(' ==> fetch data:');
 
-      const response = await fetch('http://localhost:5000/images'); // 替换为你后端的 API 地址
+      const response = await fetch(`${BACKEND_URL}/images`);
       const data = await response.json();
       console.log(' ==> data:', data);
       setImages(data);
