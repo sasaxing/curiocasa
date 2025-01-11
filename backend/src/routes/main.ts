@@ -3,7 +3,7 @@ import db from '../config/db';
 
 const router = express.Router();
 
-router.get('/images', async (req, res) => {
+router.get('/curios', async (req, res) => {
     // const examples = await Example.collection.find();
     const result = await db.listAll();
     console.log(' ==> Get result:', result);

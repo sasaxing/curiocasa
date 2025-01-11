@@ -55,9 +55,8 @@ const ImageGallery = () => {
   const fetchImages = async () => {
     try {
       const BACKEND_URL = "http://192.168.2.72:5000"
-      console.log(' ==> fetch data:');
 
-      const response = await fetch(`${BACKEND_URL}/images`);
+      const response = await fetch(`${BACKEND_URL}/curios`);
       const data = await response.json();
       console.log(' ==> data:', data);
       setImages(data);

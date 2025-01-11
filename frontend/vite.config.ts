@@ -7,8 +7,8 @@ export default defineConfig({
   server: {
     host: "0.0.0.0", // to allow other devices to access the web server
     port: 8080,
-    // proxy: {
-    //   "/api": "http://localhost:5000", // Adjust backend URL
-    // },
+    proxy: {
+      "/curios": "http://localhost:5000", // use this, only if frontend and backend are on the same host
+    },
   },
 })
