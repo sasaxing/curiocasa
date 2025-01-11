@@ -54,7 +54,10 @@ const ImageGallery = () => {
 
   const fetchImages = async () => {
     try {
-      const BACKEND_URL = "http://192.168.2.72:5000"
+      const backendUrlOverride = import.meta.env.VITE_BACKEND_URL;
+      console.log(' ==> backendUrlOverride', backendUrlOverride);
+      const BACKEND_URL = backendUrlOverride ?? "http://192.168.2.72:5000"
+      console.log(' ==> BACKEND_URL', BACKEND_URL);
 
       const response = await fetch(`${BACKEND_URL}/curios`);
       const data = await response.json();
