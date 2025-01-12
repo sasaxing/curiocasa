@@ -25,6 +25,7 @@ const Sidebar = ({ onSelectItem, images }) => {
           </li>
         ))}
       </ul>
+      
     </div>
   );
 };
@@ -59,7 +60,7 @@ const ImageGallery = () => {
       const BACKEND_URL = backendUrlOverride ?? "http://192.168.2.72:5000"
       console.log(' ==> BACKEND_URL', BACKEND_URL);
 
-      const response = await fetch(`${BACKEND_URL}/curios`);
+      const response = await fetch(`${BACKEND_URL}/antikas`);
       const data = await response.json();
       console.log(' ==> data:', data);
       setImages(data);
@@ -74,7 +75,6 @@ const ImageGallery = () => {
   
   return (
     <div className="container">
-      
       <Sidebar onSelectItem={setSelectedItem} images={images} />
       <MainContent selectedItem={selectedItem} />
     </div>

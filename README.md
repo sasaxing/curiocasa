@@ -1,4 +1,4 @@
-# Curio Casa
+# Casa Antika
 
 My home Museum
 
@@ -27,7 +27,7 @@ yarn
 yarn build
 yarn start
 ```
-Open http://localhost:5000/curios in browser, to see all items.
+Open http://localhost:5000/antikas in browser, to see all items.
 
 ## Frontend
 
